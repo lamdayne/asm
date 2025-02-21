@@ -425,9 +425,141 @@
 .product__interface-action {
     margin-top: 1rem;
 }
-/* 
+
 .product-quantity {
     width: 50px;
     padding: 5px;
     border-radius: 2rem;
-} */
+    border: none;
+}
+
+/* Cart */
+.cart__heading {
+    font-size: var(--h2-font);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cart__list {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    color: var(--text-color);
+    padding: 1rem;
+}
+
+.cart__list:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart__item-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 0.3rem;
+    margin-right: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.cart__item-name {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+
+.cart__total {
+    text-align: center;
+}
+
+.cart__total p {
+    margin-top: 1rem;
+    margin-bottom: 10px;
+    font-size: var(--h3-font);
+    font-weight: var(--font-medium);
+}
+
+.btn__checkout {
+    margin-bottom: 5rem;
+}
+
+/* Order */
+.order__container {
+    max-width: 800px;
+    margin: 100px auto;
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 4px black;
+}
+
+.order__heading {
+    text-align: center;
+    font-size: var(--h2-font);
+}
+
+.form-group-info {
+    margin-bottom: 20px;
+}
+
+.form-group-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid gray;
+    gap: 15px;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-info {
+    margin-right: auto;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 4px;
+}
+
+.product-price {
+    font-weight: bold;
+    text-align: right;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    font-weight: var(--font-bold);
+    font-size: 18px;
+}
+
+.payment-methods {
+    margin: 20px 0;
+}
+
+.payment-option {
+    margin: 10px 0;
+}

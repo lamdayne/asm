@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store | Checkout</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=512&id=16643&format=png">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <!-- Remix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="https://img.icons8.com/?size=100&id=16647&format=png&color=000000" alt="Logo"></a>
+        </div>
+        <ul class="nav__list">
+            <li><a href="./index.html#home">Home</a></li>
+            <li><a href="./index.html#featured">Featured</a></li>
+            <li><a href="./index.html#new">New</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+        </ul>
+        <div class="header-icons">
+            <a href="./login.html"><i class="ri-user-line"></i></a>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <section class="order__container">
+        <h1 class="order__heading">Order Payment</h1>
+
+        <form id="checkout-form">
+            <!-- Info -->
+            <div class="form-group-info">
+                <label for="fullName">Name</label>
+                <input class="form-group-input" type="text" id="fullName" required>
+            </div>
+
+            <div class="form-group-info">
+                <label for="phone">Phone Number</label>
+                <input class="form-group-input" type="tel" id="phone" required>
+            </div>
+
+            <div class="form-group-info">
+                <label for="address">Address</label>
+                <div class="address-input">
+                    <input class="form-group-input" type="text" id="address" required>
+                </div>
+            </div>
+
+            <!-- Products -->
+            <div class="products">
+                <h2>Products</h2>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./assets/img/AIR+PENNY+II+SP.png" alt="AIR+PENNY+II+SP">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">AIR PENNY 2</div>
+                        <div class="product-quantity">1</div>
+                    </div>
+                    <div class="product-price">$100</div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./assets/img/ZOOM+LEBRON+II.png" alt="NIKE+ISOFLY+(GS)">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">ZOOM LEBRON 2</div>
+                        <div class="product-quantity">1</div>
+                    </div>
+                    <div class="product-price">$150</div>
+                </div>
+
+                <div class="product-item">
+                    <div class="product-image">
+                        <img src="./assets/img/W+ZOOMX+INVINCIBLE+RN+FP.png" alt="NIKE+VERSAIR">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">ZOOMX INVICIBLE</div>
+                        <div class="product-quantity">1</div>
+                    </div>
+                    <div class="product-price">$120</div>
+                </div>
+
+                <div class="total">
+                    <span>Total</span>
+                    <span>$370</span>
+                </div>
+            </div>
+
+            <!-- Pay methods -->
+            <div class="payment-methods">
+                <h2>Payment Methods</h2>
+
+                <div class="payment-option">
+                    <input type="radio" id="cod" name="payment" value="cod" checked>
+                    <label for="cod">Direct Payment (COD)</label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="bank" name="payment" value="bank">
+                    <label for="bank">Bank Transfer</label>
+                </div>
+
+                <div class="payment-option">
+                    <input type="radio" id="paypal" name="payment" value="paypal">
+                    <label for="paypal">Paypal</label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">
+                Payment Confirmation
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section class="footer__container">
+            <div class="footer__box">
+                <h3 class="footer__title">NIKE</h3>
+                <p class="footer__desc">New collection of shoes 2025</p>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">EXPLORE</h3>
+                <ul>
+                    <li><a href="#home" class="footer__link">Home</a></li>
+                    <li><a href="#featured" class="footer__link">Featured</a></li>
+                    <li><a href="#new" class="footer__link">New</a></li>
+                    <li><a href="#contact" class="footer__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__box">
+                <h3 class="footer__title">SUPPORT</h3>
+                <ul>
+                    <li><a href="#" class="footer__link">Product Help</a></li>
+                    <li><a href="#" class="footer__link">Customer Care</a></li>
+                    <li><a href="#" class="footer__link">Athorized Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__box">
+                <a href="" class="footer__social">
+                    <i class="ri-facebook-fill"></i>
+                    Facebook
+                </a>
+                <a href="" class="footer__social">
+                    <i class="ri-instagram-line"></i>
+                    Instagram
+                </a>
+                <a href="" class="footer__social">
+                    <i class="ri-twitter-x-fill"></i>
+                    Twitter
+                </a>
+            </div>
+        </section>
+
+        <p class="footer__copy">&copy; 2025 All rights reserved by NIKE | Powered by <a class="creator" href="https://lamdayne.github.io/">Nguyen Lam</a></p>
+    </footer>
+</main>
+</body>
+</html>
