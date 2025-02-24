@@ -306,7 +306,6 @@
     top: 50%;
     transform: translateY(15%);
     text-align: center;
-    flex-direction: column;
 }
 
 .auth__container {
@@ -538,13 +537,13 @@
 
 .product-name {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: var(--font-bold);
     letter-spacing: 3px;
     margin-bottom: 4px;
 }
 
 .product-price {
-    font-weight: bold;
+    font-weight: var(--font-bold);
     text-align: right;
 }
 
@@ -562,4 +561,8 @@
 
 .payment-option {
     margin: 10px 0;
+}
+
+.app {
+    margin-bottom: 7rem;
 }
